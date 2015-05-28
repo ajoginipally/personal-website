@@ -1,0 +1,204 @@
+body{
+	margin: 0px;
+	min-width: 980px;
+	padding: 0px;
+}
+#home{
+	background:url(images/sketch.png) 50% 0 no-repeat fixed;
+	color: white;
+	height: 775px;
+	margin: 0 auto;
+	padding: 0;
+}
+#profile{
+	background: url(images/night2.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+#portfolio{
+	background: url(images/orangeballoon.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 675px;
+	padding: 100px 0 0 0;	
+}
+
+.content {
+	font-family:"Damion", cursive;
+	font-style:normal;
+	text-align: center;
+	color: white;
+	margin:0px;
+}
+
+.content iframe {
+	margin-top: 30px;
+}
+#home .content{
+	font-size: 100px;
+	font-weight:1000;
+	text-shadow: -10px 10px 0px #00e6e6,
+                 -20px 20px 0px #01cccc,
+                 -30px 30px 0px #00bdbd;
+
+}
+
+
+.sidenav{
+	position:fixed;
+	top:10%;
+	left:95%;
+}
+
+#profile .content #hash{
+	font-family: 'Sigmar One';
+	font-size: 60px;
+	text-align: center;
+	margin-top: 150px;
+	width: 100%;
+	text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+
+#profile .content #paren{
+	font-family: 'Sigmar One';
+	font-size: 30px;
+	text-align: center;
+	margin-top: 0px;
+	width: 100%;
+	text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+
+
+	
+}
+
+#profile .content{
+	hr {
+		border: 0;
+		width: 80%;
+	}
+}
+
+#profile .content #dev{
+	font-family:'Lato';
+	font-weight: 100;
+	font-size: 40px;
+	margin-top: 60px;
+	background: rgba(0,0,0,.5);
+
+}
+
+.image-box img {
+	width: inherit;
+	height: inherit;
+    z-index: 3000;
+}
+
+.hold {
+	width: 250px;
+	height: 166px;
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+.image-box {
+    /* Inherit width and height from the .holder */
+    width: inherit;
+    height: inherit;
+    padding: 10px;
+    /* Box shadow */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+
+    border-radius: 5px;
+    /* Position absolutely so we can zoom it out later */
+    position: absolute;
+    top: 2100px;
+    font-family: Arial, sans-serif;
+    /* Transitions to provide some eye candy */
+    -webkit-transition: all ease-in 0.5s;
+    -moz-transition: all ease-in 0.5s;
+    -ms-transition: all ease-in 0.5s;
+    -o-transition: all ease-in 0.5s;
+}
+
+.image-box span {
+    display: none;
+}
+ 
+.image-box .expand {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 4000;
+    background: rgba(0,0,0,0); /* Fixes an IE bug */
+    left: 0;
+}
+ 
+.image-box .close {
+    position: absolute;
+    width: 20px; height: 20px;
+    right: 20px; top: 20px;
+}
+ 
+.image-box .close a {
+    height: auto; width: auto;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    background: #22272c;
+    box-shadow: inset 0px 24px 20px -15px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0,0,0,0.4), 0px 0px 30px rgba(255,255,255,0.4);
+    border-radius: 5px;
+    font-weight: bold;
+    float: right;
+}
+ 
+.image-box .close a:hover {
+    box-shadow: inset 0px -24px 20px -15px rgba(255, 255, 255, 0.01), inset 0px 0px 10px rgba(0,0,0,0.4), 0px 0px 20px rgba(255,255,255,0.4);
+}
+
+div#image-1 { left: 100px; }
+div#image-2 { left: 390px; }
+div#image-3 { left: 680px; }
+div#image-4 { left: 970px; }
+
+div[id^=image]:target {
+    width: 450px;
+    height: 400px;
+    z-index: 5000;
+    top: 2000px;
+    right: 200px;
+}
+
+
+div[id^=image]:target .close {
+    display: block;
+
+}
+ 
+div[id^=image]:target .expand {
+    display: none;
+}
+ 
+div#image-1:target, div#image-2:target, div#image-3:target, div#image-4:target { right: 200px; }
+
+
+.port-title {
+font-family: 'Pacifico';
+font-size: 75px;
+padding: 0px;
+margin: 0px;
+text-align: center;
+color: #FFB347;
+text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+
+.port-para {
+	font-family: 'Fredoka One';
+	font-size: 40px;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
