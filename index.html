@@ -11,9 +11,12 @@
 		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
 		<script>
-			function moveTo(x,y){
-				window.scrollTo(x, y*window.innerWidth);
+			function moveTo(id){
+				var sectionRect = document.getElementById(id).getBoundingClientRect(),
+					bodyRect = document.body.getBoundingClientRect()
+				window.scrollTo(sectionRect.left - bodyRect.left, sectionRect.top - bodyRect.top);
 			}
+
 		</script>
 
 	</head>
@@ -21,9 +24,9 @@
 	<body>
 		<div class="sidenav">
 			<ul class="nav nav-pills nav-stacked">
-			  <li role="presentation"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-home" aria-hidden="true" onclick="moveTo(0,0)"></span></button></li>
-			  <li role="presentation"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-user" aria-hidden="true" onclick="moveTo(0,.4845)"></span></button></li>
-			  <li role="presentation"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-heart" aria-hidden="true" onclick="moveTo(0,1)"></span></button></li>
+			  <li role="presentation"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-home" aria-hidden="true" onclick="moveTo('home')"></span></button></li>
+			  <li role="presentation"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-user" aria-hidden="true" onclick="moveTo('profile')"></span></button></li>
+			  <li role="presentation"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-heart" aria-hidden="true" onclick="moveTo('portfolio')"></span></button></li>
 			</ul>
 		</div>		
 
