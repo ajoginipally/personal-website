@@ -1,28 +1,28 @@
-body{
-	margin: 0px;
-	min-width: 980px;
-	padding: 0px;
-}
+html, body { height: 100%; width: 100%; margin: 0; }
+
 #home{
 	background:url(images/sketch.png) 50% 0 no-repeat fixed;
+	background-size: 100% 100%;
 	color: white;
-	height: 775px;
+	height: 100vh;
 	margin: 0 auto;
 	padding: 0;
 }
 #profile{
 	background: url(images/night2.jpg) 50% 0 no-repeat fixed;
+	background-size: 100% 100%;
 	color: white;
-	height: 1000px;
+	height: 100vh;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 0;
 }
 #portfolio{
 	background: url(images/orangeballoon.jpg) 50% 0 no-repeat fixed;
+	background-size: 100% 100%;
 	color: white;
-	height: 675px;
-	padding: 100px 0 0 0;	
+	height: 100vh;
+	padding: 0;	
 }
 
 .content {
@@ -34,10 +34,10 @@ body{
 }
 
 .content iframe {
-	margin-top: 30px;
+	margin-top: 5%;
 }
 #home .content{
-	font-size: 100px;
+	font-size: 625%;
 	font-weight:1000;
 	text-shadow: -10px 10px 0px #00e6e6,
                  -20px 20px 0px #01cccc,
@@ -54,18 +54,18 @@ body{
 
 #profile .content #hash{
 	font-family: 'Sigmar One';
-	font-size: 60px;
+	font-size: 375%;
 	text-align: center;
-	margin-top: 150px;
+	margin-top: 5%;
 	width: 100%;
 	text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 
 #profile .content #paren{
 	font-family: 'Sigmar One';
-	font-size: 30px;
+	font-size: 187.5%;
 	text-align: center;
-	margin-top: 0px;
+	margin-top: 0%;
 	width: 100%;
 	text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 
@@ -73,31 +73,25 @@ body{
 	
 }
 
-#profile .content{
-	hr {
-		border: 0;
-		width: 80%;
-	}
-}
 
 #profile .content #dev{
 	font-family:'Lato';
 	font-weight: 100;
-	font-size: 40px;
-	margin-top: 60px;
+	font-size: 250%;
+	margin-top: 3%;
 	background: rgba(0,0,0,.5);
 
 }
 
 .image-box img {
-	width: inherit;
-	height: inherit;
+	width: 100%;
+	height: 100%;
     z-index: 3000;
 }
 
 .hold {
-	width: 250px;
-	height: 166px;
+	width: 20%;
+	height: 30%;
 	float: left;
 	margin: 0 20px 0 0;
 }
@@ -106,14 +100,14 @@ body{
     /* Inherit width and height from the .holder */
     width: inherit;
     height: inherit;
-    padding: 10px;
+    padding: .5%;
     /* Box shadow */
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 
     border-radius: 5px;
     /* Position absolutely so we can zoom it out later */
     position: absolute;
-    top: 2100px;
+    top: 250%;
     font-family: Arial, sans-serif;
     /* Transitions to provide some eye candy */
     -webkit-transition: all ease-in 0.5s;
@@ -133,23 +127,22 @@ body{
     top: 0;
     z-index: 4000;
     background: rgba(0,0,0,0); /* Fixes an IE bug */
-    left: 50;
 }
  
 .image-box .close {
     position: absolute;
-    width: 20px; height: 20px;
-    right: 20px; top: 20px;
+    width: 10%; height: 10%;
+    right: 3%; top: 4%;
 }
  
 .image-box .close a {
     height: auto; width: auto;
-    padding: 5px 10px;
+    padding: 10% 20%;
     color: #fff;
     text-decoration: none;
     background: #22272c;
     box-shadow: inset 0px 24px 20px -15px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0,0,0,0.4), 0px 0px 30px rgba(255,255,255,0.4);
-    border-radius: 5px;
+    border-radius: 10%;
     font-weight: bold;
     float: right;
 }
@@ -158,17 +151,16 @@ body{
     box-shadow: inset 0px -24px 20px -15px rgba(255, 255, 255, 0.01), inset 0px 0px 10px rgba(0,0,0,0.4), 0px 0px 20px rgba(255,255,255,0.4);
 }
 
-div#image-1 { left: 100px; }
-div#image-2 { left: 390px; }
-div#image-3 { left: 680px; }
-div#image-4 { left: 970px; }
+div#image-1 { left: 5%; }
+div#image-2 { left: 28%; }
+div#image-3 { left: 51%; }
+div#image-4 { left: 75% }
 
 div[id^=image]:target {
-    width: 450px;
-    height: 400px;
+    width: 50%;
+    height: 70%;
     z-index: 5000;
-    top: 2000px;
-    right: 200px;
+
 }
 
 
@@ -181,14 +173,16 @@ div[id^=image]:target .expand {
     display: none;
 }
  
- div#image-4:target { left: 800px; }
- div#image-3:target { left: 500px; }
+ div#image-4:target { left: 25%; top:220%; }
+ div#image-3:target { left: 25%; top: 220% }
+ div#image-2:target { left: 25%; top: 220% }
+ div#image-1:target { left: 25%; top: 220% }
 
 
 .port-title {
 font-family: 'Pacifico';
-font-size: 75px;
-padding: 0px;
+font-size: 468.75%;
+padding: 2%;
 margin: 0px;
 text-align: center;
 color: #FFB347;
@@ -197,7 +191,7 @@ text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 
 .port-para {
 	font-family: 'Fredoka One';
-	font-size: 40px;
+	font-size: 250%;
 	padding: 0px;
 	margin: 0px;
 	text-align: center;
